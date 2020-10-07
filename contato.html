@@ -15,7 +15,7 @@
 </body>
     <header>
         <div class="caixa">
-            <h1><img src="img/logo.png" alt="Logo da Barbearia Alura"></h1>
+            <h1><a href="index.html"><img src="img/logo.png" alt="Logo Barbearia Alura" ></a></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -25,7 +25,7 @@
             </nav>
         </div>
     </header>
-    <div class="fundo">
+    <section class="fundo">
         <main>
             <form autocomplete="off">
                 <label for="nomesobrenome">Nome e Sobrenome</label>
@@ -50,7 +50,7 @@
     
                 <fieldset>
                     <legend>Qual o horário prefere ser atendido?</legend>
-                    <select>
+                    <select class="select-campos">
                         <option>Manhã</option>
                         <option>Tarde</option>
                         <option>Noite</option>
@@ -62,35 +62,35 @@
     
                 <input type="submit" value="Enviar Formulário"  class="enviar">
             </form>
-    
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda</td>
-                        <td>8h - 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta</td>
-                        <td>8h - 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta</td>
-                        <td>8h - 20h</td>
-                    </tr>
-                </tbody>
-            </table>
-    
+            <section class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </main>
-    </div>
+    </section>
     
     <footer>
-        <img src="img/logo-branco.png" alt="Logo da Barbearia Alura">
+        <h1><a href="index.html"><img src="img/logo-branco.png" alt="Logo Barbearia Alura" ></a></h1>
         <p class="copyright">&copy;Copyright Barbearia Alura - 2019</p>
     </footer>
 </html>
