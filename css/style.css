@@ -348,6 +348,8 @@ td, th {
 
 }
 
+
+/*Parte destinada a configuração do acesso em celulares e tablets*/
 @media screen and (max-width: 1000px) {
     main, .caixa, .principal, .fundo, .conteudo-beneficios, .mapa-conteudo, .video {
         width: auto;
