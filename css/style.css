@@ -4,7 +4,7 @@ body {
 
 /*CSS da página de produtos*/
 header {
-    background: linear-gradient(#888888, #8b8b8b, #8f8f8f, #7f7f7f, #000000);
+    background: linear-gradient(black, #888888, #8b8b8b, #8f8f8f, #7f7f7f, #000000);
     padding: 20px 0;
 }
 
@@ -27,18 +27,22 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #000000;
+    color: #FEFEFE;
     font-size: 22px;
+    font-weight: bold;
     text-decoration: none;
+    text-shadow: 0.1em 0.1em 0.2em black;
+
 }
 
 nav a:hover {
-    color: #008080;
+    color: #FFF;
     font-weight: bold;
+    text-shadow: 0.2em 0.2em 0.1em #000;
 }
 
 nav a:active{
-    color: #189F04;
+    color: #000000;
 }
 
 .produtos {
@@ -169,7 +173,6 @@ form label, legend{
 }
 
 .tabela {
-    background: #F7F7F7;
     margin-bottom: 30px;
 }
 
@@ -215,12 +218,20 @@ td, th {
     clear: left;
 }
 
+.titulo-principal::before{
+    content: "[ ";
+}
+.titulo-principal::after{
+    content: " ]";
+}
+
 .principal {
     padding: 3em 0;
 }
 
 .principal p {
     margin: 0 0 1em;
+    line-height: 1.5em;
 }
 
 .principal strong {
@@ -235,7 +246,7 @@ td, th {
     width: 120px;
     box-shadow: 0.1em 0.1em 0.2em black;
     float: left;
-    margin: 0 20px 20px 0;
+    margin: 0 15px 5px 0;
     transition: 1s;
 }
 
@@ -290,20 +301,26 @@ td, th {
     line-height: 1.5em;
 }
 
+.itens::before{
+    content: "\2605  ";
+}
+
 .itens:first-child {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.06em;
 }
 
 .imagem-beneficios {
     width: 60%;
     box-shadow: 0.1em 0.1em 0.2em black;
     transition: 1s;
+    opacity: 0.5;
 }
 
 .imagem-beneficios:hover {
     transform: scale(1.05);
     box-shadow: 0.3em 0.3em 0.5em #000000;
+    opacity: 1;
 }
 
 
@@ -328,5 +345,79 @@ td, th {
     margin: 3em auto;
     box-shadow: 0.1em 0.1em 0.2em black;
     transition: 1s;
+
+}
+
+@media screen and (max-width: 1000px) {
+    main, .caixa, .principal, .fundo, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+
+    }
+
+    nav {
+        position: static;
+        margin: 5% 0 5% 2%;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0 0 0 5px;
+    }
+    .caixa {
+        text-align: center;
+    }
+
+    .caixa a {
+        color: #FEFEFE;
+        font-size: 1.2em;
+    }
+
+    .titulo-principal {
+        font-size: 1.5em;
+    }
+
+    .principal {
+        margin: 5%;
+    }
+
+    .mapa {
+        margin: 5%;
+    }
+
+    .conteudo-beneficios {
+        margin: 5%;
+    }
+
+    .video {
+        margin: 5%;
+    }
+
+    .produtos {
+        width: auto;
+    }
+
+    .produtos li {
+        display: block;
+        width: auto;
+        margin: 10px;
+    }
+    table {
+        width: auto;
+    }
+    form {
+        margin: 50px;
+    }
+    .input-padrao {
+        width: 90%;
+    }
+
+    .enviar {
+        width:90%;
+    }
+
 
 }
